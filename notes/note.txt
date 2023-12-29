@@ -1,0 +1,56 @@
+working with git branch
+     1.create branch
+     2.switch to the new branch
+
+
+
+     git checkout -b <newbranch name>
+
+PS F:\Udemy\js29dec2023>  git checkout -b 29dec2023       
+Switched to a new branch '29dec2023'
+PS F:\Udemy\js29dec2023>
+
+
+PS F:\Udemy\js29dec2023> git branch
+* 29dec2023
+  master
+
+
+-----PS F:\Udemy\js29dec2023> git init
+Reinitialized existing Git repository in F:/Udemy/js29dec2023/.git/
+-----PS F:\Udemy\js29dec2023> git remote add origin https://github.com/ApsanaMohammad/javascriptdec29.git
+-----PS F:\Udemy\js29dec2023> git add .
+-----PS F:\Udemy\js29dec2023> git commit -m "basic"
+[master (root-commit) 0c145a3] basic
+ 1 file changed, 31 insertions(+)
+ create mode 100644 index.html
+-----PS F:\Udemy\js29dec2023> git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 591 bytes | 591.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:
+To https://github.com/ApsanaMohammad/javascriptdec29.git
+ * [new branch]      master -> master
+-----PS F:\Udemy\js29dec2023> git branch
+* master
+-----PS F:\Udemy\js29dec2023> mkdir notes
+
+
+    Directory: F:\Udemy\js29dec2023
+
+Mode                 LastWriteTime         Length Name
+d-----        12/29/2023  10:15 AM                notes
+
+
+------PS F:\Udemy\js29dec2023>  git checkout -b 
+Switched to a new branch '29dec2023'
+PS F:\Udemy\js29dec2023>
+
+
+-----PS F:\Udemy\js29dec2023> git branch
+* 29dec2023
+  master
