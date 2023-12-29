@@ -1,0 +1,71 @@
+What are the Types of JavaScript Literals?
+Javascript literals hold different types of values. Examples of JavaScript Literals are given below:
+
+1. Integer Literals
+Integer literals are numbers that must have a minimum of one digit (0-9).
+ No blank or comma is allowed within an integer. It can store positive numbers or negative numbers.
+  JavaScript supports integer literals in three different bases.
+   The base 10 is Decimal (Decimal numbers contain digits (0,9) );
+    examples for Decimal numbers are 234, -56, 10060. Second is base 8,
+     Octal (Octal numbers contain digits (0,7) and leading 0 indicates octal), 0X 073, -089, 02003. 
+     Third is base 16, that is, Hexadecimal numbers (Hexadecimal numbers contain (0,9) digits and (A, F) or (a, f) 
+     letters and leading 0x or 0X indicate the number is hexadecimal); examples for hexadecimal numbers are 0X8b, – 0X89, 0X2003.
+
+
+     2. Floating Number Literals
+Floating numbers are decimal or fraction numbers or can have an exponent part. 
+Examples of hexadecimal numbers are 78.90, -234.90, 78.6e4, etc.
+
+3. String Literals
+A string literals are a sequence of zero or more characters. A string literals are either enclosed in the single quotation or double quotation as (‘) and (“) respectively, and to concatenate two or more strings, we can use the + operator. 
+Examples for string are “hello”, “hello world”, “123”, “hello” + “world” etc.
+
+
+4. Array Literals
+Array literals comprise a list of expressions or constant values, with each expression referred to as an array element.
+ An array literal contains a list of elements within square brackets’ [ ]’.
+  Suppose no value is a pass when it creates an empty array with zero length.
+   If elements are passed, its length is set to the number of elements passed. 
+   String examples are var color = [ ], var fruits = [“Apple”, “Orange”, “Mango”, “Banana”] (an array of four elements).
+
+   5. Boolean Literals
+Boolean literals in JavaScript have only two literal values, that are true and false.
+
+Let us understand with an example code.
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset= "utf-8" >
+<title> This is an example for Boolean literals </title>
+</head>
+<body>
+<h1>JavaScript Boolean </h1>
+<p> Boolean Examples are : </p>
+<script>
+document.write('Boolean(12) is ' + Boolean(12));
+document.write('<br>');
+document.write('Boolean("Hello") is ' + Boolean("Hello"));
+document.write('<br>');
+document.write('Boolean(2 > 3) is ' + Boolean(2 > 3));
+document.write('<br>');
+document.write('Boolean(3 > 2) is ' + Boolean(3 > 2));
+document.write('<br>');
+document.write('Boolean(-12) is ' + Boolean(-12));
+document.write('<br>');
+document.write("Boolean('true') is " + Boolean('true'));
+document.write('<br>');
+document.write("Boolean('false') is " + Boolean('false'));
+document.write('<br>');
+document.write('Boolean(0) is ' + Boolean(0));
+</script>
+</body>
+</html>
+Output:
+
+Output-1.5
+6. Object Literals
+Object literals are collections of zero or more key-value pairs of a comma-separated list, enclosed by a pair of curly braces ‘{ } ‘.Examples of an object literal with a declaration are var userObject = { }, var student = { f-name : “John”, l-name : “D”, “rno”: 23, “marks”: 60}
+Let’s understand with an example code –
