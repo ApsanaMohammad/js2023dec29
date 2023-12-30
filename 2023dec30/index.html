@@ -7,14 +7,44 @@
 </head>
 <body>
     <script>
+        //functions : fns are resuaable block of code 
+        //........1.1 classic/oldway
+                 //function funcname(){}
+        //........1.2 modern/newway ES6(echma script 2015)
+                //let funcname=()=>{} ..called fat arrow/arrow function 
+                
+        //-----------------------------------------------
+        //function defination
+        function funcname1(){
+                  //function body
+                  console.log("classic/oldway")
+        }  
+        
+        //function calling
+           funcname1();
+
+        //------------------------------------------------
+        //function defination
+        let funcname2=()=>{
+                  //function body
+                  console.log("modern/newway")
+        }  
+        
+        //function calling
+           funcname2();   
+    //--------------------------------------------------------------------
         //array in js
         //var arrname=["bbb",112."gh"];
         //acccessing using index arrname[index]  from 0,1...n
         //example
         var arr=["apsana","sana"];
-        console.log(arr[1]);
+        console.log(arr[1]);///....sana
+        //spread / copy operator "..."
+        var arr1=[...arr,"apsana1","sana1"];
+        console.log(arr1[1]);///....sana
+//------------------------------------------------------------------------
 
-
+        //optimize assignments using +=,-=,*=,/=,%=,<<=,>>=,>>>=,&=,^=,!=,**=,
         //kinds of loops in js
         //for
         //for/of
@@ -23,14 +53,72 @@
         //do/while
 
 
-        //forloop  for(init,cond,inc/dec){}
+        //forloop .. for(init,cond,inc/dec){}
 
         //example
 
-        for(let i=0;i<arr.length;i++){
+        for(var i=0;i<arr.length;i++){
             console.log(arr[i]);
         }
+        
+
+        //for of  for(variables of iterable){}
+                  //variable returns value
+        //example
+        let teachers=["aa","bb","cc"];
+        for(teacher of teachers){
+            console.log(teacher);
+        }
+        
+
+        ////for of  for(variables of iterable){}
+                  //variable returns index
+        //example
+        for(teacher in teachers){
+            console.log(teachers[teacher]);///used to print values based on indexing
+        }
+//----------------------------------------------------------------------------------
+
+//objects in javascript 
+        //1.js object ...{}
+                /* 
+                    {
+                        1.member--property :value
+                        2.member--function
+                    }  
+
+                    accesssed using dot operator objname.propertyname;
+                */
+        //2.class object
+        let s=[];//--->array
+        let s1={};//--->js object
+            s1={
+                sname:"apsana",
+                education:"Btech",
+                parents:[   //array in an object
+                    {name:"azeez",//ojecta in an array
+                     contact:"9866846517",
+                    },
+                    {name:"rehana",
+                     contact:"9110397171",
+                    },
+                  
+                ],
+
+                myfunction : function(){
+                      console.log("hello from myfunction in the obj s1 "+this.sname);
+               }  ,
+               
+                    
+
+            };
+            console.log(s1.education);
+            console.log(s1.name+" parents are "+s1.parents[0].name+" and "+s1.parents[1].name);
+            console.log(s1.myfunction());
+            //array are iterable
+            //arrays of objs are also iterable
+            //but objects are not iterable
 
     </script>
 </body>
-</html>
+</html> 
