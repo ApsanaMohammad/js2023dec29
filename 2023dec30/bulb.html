@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+             body{
+                background-color: rgb(0, 0, 0);
+             }
+    </style>
+    <script>
+            clickMe=(m)=>{
+                   if(m=='on')  {
+                       document.body.style.backgroundColor='yellow';
+                       document.getElementById('bulb').setAttribute('src','img/on1.png');
+                       
+
+                   }
+                   else{
+                       document.body.style.backgroundColor='black';
+                       document.getElementById('bulb').setAttribute('src','img/off1.png');
+                   }
+
+            }
+    </script>
+</head>
+<body>
+      <center>
+            <img id='bulb' src="img\off1.png" height="500" width="500">
+            <button onclick="clickMe('on')">ON</button>
+             <button onclick="clickMe('off')">OFF</button>
+      </center>
+   
+</body>
+</html>
