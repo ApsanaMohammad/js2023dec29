@@ -22,7 +22,7 @@
 
 
 //1.function defination
-function myFun(name){//name is formal arg/parm
+function myFun(name){ //name is formal arg/parm
     console.log(name+" "+"hello");//+concatination if left or right operand is string 
     console.log(5+"hello");
     console.log("hello"+10);
@@ -34,11 +34,14 @@ myFun("apsana");//actual arg/param
 let PI = 3.14;
 console.log(PI);
 
-function Add(x,y){
+function add(x,y){
     return x+y;
 }
-let res = Add(5,6);
+let res = add(5,6);
 console.log(res);
+
+let r1=add(10,add(2,5));
+console.log(r1);
 
 </script>
     
